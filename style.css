@@ -88,14 +88,14 @@ nav a {
 
 
 /* banner style */
-.banner-bg{
+.banner-bg {
     position: absolute;
     top: 0px;
     left: -200px;
-    
-
+    z-index: -1;
 }
-.banner-bap{
+
+.banner-bap {
     position: relative;
 }
 
@@ -349,7 +349,12 @@ nav a {
     border: 1px solid #F948B2;
     padding: 9px 19px;
 
+
 }
+.box:hover p{
+    color: #F948B2;
+}
+
 
 .box:hover .box-bap-1 {
     grid-template-columns: repeat(5, 280px);
@@ -360,16 +365,6 @@ nav a {
     grid-template-columns: repeat(4, 280px);
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -408,9 +403,18 @@ footer a {
     padding-top: 70px;
 }
 
-.new {
+.footer-more-new {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
     gap: 100px;
+    color: #FFF;
+    padding-top: 56px;
+
 }
+
+
 
 footer h4 {
     color: rgba(255, 255, 255, 0.60);
@@ -420,96 +424,6 @@ footer h4 {
     padding-top: 20px;
     padding-bottom: 130px;
 }
-
-
-
-
-
-.hide {
-    display: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -612,23 +526,43 @@ footer h4 {
         left: 130px;
 
     }
-    .footer-more{
+
+    .footer-more {
         display: grid;
-        grid-template-columns: repeat( 3 , 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         justify-items: center;
     }
-    .Social{
-        display: grid;
-        grid-template-columns: repeat( 3 , 1fr);
-        gap: 20px;
+
+    .social-bap {
+        display: flex;
+        justify-content: center;
     }
 
+    .Social {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
 
+    .footer-more-new {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
 
+    }
+    footer h4 {
+        padding-top: 50px;
+    }
+    .box-bap-1{
+        grid-template-columns: repeat(1 , 280px);
+        gap: 30px;
+        justify-items: center;
+    }
+    .box-bap-2{
+        grid-template-columns: repeat(1 , 280px);
+        gap: 30px;
+        justify-items: center;
 
-
-
-
-
+    }
 }
